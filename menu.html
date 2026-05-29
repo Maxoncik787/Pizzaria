@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Menu</title>
+
+<link rel="stylesheet"
+href="menu.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+<div class="chat-btn" onclick="toggleChat()">
+💬
+</div>
+
+<div class="chat-box" id="chatBox">
+
+<div class="chat-header">
+Поддержка
+</div>
+
+<div class="messages" id="messages"></div>
+
+<div class="chat-input">
+
+<input id="msg"
+placeholder="Напишите сообщение">
+
+<button onclick="sendMsg()">
+➤
+</button>
+
+</div>
+
+</div>
+<div class="top">
+
+<input type="text"
+id="search"
+placeholder="Поиск блюд...">
+
+<div class="categories">
+
+<button class="cat-btn"
+data-category="all">
+
+Все
+
+</button>
+
+<button class="cat-btn"
+data-category="pizza">
+
+Пицца
+
+</button>
+
+<button class="cat-btn"
+data-category="hot">
+
+Горячие
+
+</button>
+
+<button class="cat-btn"
+data-category="salad">
+
+Салаты
+
+</button>
+
+<button class="cat-btn"
+data-category="drink">
+
+Напитки
+
+</button>
+
+</div>
+
+</div>
+
+<div class="products"
+id="products">
+
+</div>
+
+<div class="cart-bar">
+
+<div>
+🛒 <span id="items">0</span>
+|
+<span id="total">0</span> грн
+</div>
+
+<a href="cart.html">
+Корзина
+</a>
+
+</div>
+
+<div class="popup"
+id="popup">
+
+Товар добавлен
+
+</div>
+
+<script src="menu.js"></script>
+
+</body>
+</html>

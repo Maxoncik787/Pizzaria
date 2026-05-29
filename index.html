@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazing Pizza</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<link rel="stylesheet" href="support.css">
+
+<div id="support"></div>
+
+<script>
+fetch("support.html")
+.then(r=>r.text())
+.then(data=>{
+document.getElementById("support").innerHTML=data;
+});
+</script>
+
+<script src="support.js"></script>
+<div class="navbar">
+
+<div class="logo">
+Amazing Pizza
+</div>
+
+<a href="menu.html" class="nav-btn">
+Меню
+</a>
+
+</div>
+
+<div class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>
+Amazing Pizza
+</h1>
+
+<p>
+Лучшая пицца в городе
+</p>
+
+<div class="hero-buttons">
+
+<a href="menu.html" class="hero-btn">
+Смотреть меню
+</a>
+
+<button class="book-btn"
+onclick="openModal()">
+
+Забронировать столик
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- MODAL -->
+
+<div class="modal" id="modal">
+
+<div class="modal-box">
+
+<h2>
+Бронирование
+</h2>
+
+<div class="input-box">
+
+<label>
+Время
+</label>
+
+<input type="time">
+
+</div>
+
+<div class="input-box">
+
+<label>
+Столик
+</label>
+
+<select>
+
+<option>Столик 1</option>
+<option>Столик 2</option>
+<option>Столик 3</option>
+<option>Столик 4</option>
+<option>Столик 5</option>
+<option>Столик 6</option>
+<option>Столик 7</option>
+<option>Столик 8</option>
+<option>Столик 9</option>
+<option>Столик 10</option>
+<option>Столик 11</option>
+<option>Столик 12</option>
+
+</select>
+
+</div>
+
+<div class="price">
+500 грн
+</div>
+
+<div class="modal-buttons">
+
+<button class="confirm-btn"
+onclick="bookTable()">
+
+Забронировать
+
+</button>
+
+<button class="cancel-btn"
+onclick="closeModal()">
+
+Отмена
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
