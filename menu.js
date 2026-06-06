@@ -63,7 +63,9 @@ box.innerHTML+=`
 
 <div class="counter">
 <button onclick="minus(${p.id})">-</button>
+
 <span>${p.count}</span>
+
 <button onclick="plus(${p.id})">+</button>
 </div>
 
@@ -74,20 +76,75 @@ box.innerHTML+=`
 updateCart();
 }
 
+function showPopup(){
+
+const popup =
+document.getElementById(
+"popup"
+);
+
+popup.classList.add(
+"active"
+);
+
+clearTimeout(
+popup.hideTimer
+);
+
+popup.hideTimer =
+setTimeout(()=>{
+
+popup.classList.remove(
+"active"
+);
+
+},1000);
+
+}
+
 function plus(id){
-let p = products.find(x=>x.id===id);
-if(p.count<10) p.count++;
+
+let p =
+products.find(
+x => x.id === id
+);
+
+if(!p) return;
+
+if(p.count < 10){
+
+p.count++;
+
+showPopup();
+
+}
+
 saveCart();
+
 render();
+
 }
 
 function minus(id){
-let p = products.find(x=>x.id===id);
-if(p.count>0) p.count--;
+
+let p =
+products.find(
+x => x.id === id
+);
+
+if(!p) return;
+
+if(p.count > 0){
+
+p.count--;
+
 saveCart();
+
 render();
+
 }
 
+}
 function updateCart(){
 let items=0;
 let total=0;

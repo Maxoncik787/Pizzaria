@@ -18,7 +18,46 @@ rel="stylesheet">
 </head>
 
 <body>
+<div class="chat-btn" onclick="toggleChat()">
+💬
+</div>
 
+<div class="chat-box" id="chatBox">
+
+<div class="chat-header">
+
+Поддержка
+
+<span onclick="toggleChat()">
+✖
+</span>
+
+</div>
+
+<div class="messages" id="messages">
+
+<div class="bot">
+Здравствуйте 👋 Чем помочь?
+</div>
+
+</div>
+
+<div class="chat-input">
+
+<input
+id="msg"
+placeholder="Напишите сообщение...">
+
+<button onclick="sendMsg()">
+➤
+</button>
+
+</div>
+
+</div>
+
+<link rel="stylesheet" href="support.css">
+<script src="support.js"></script>
 <h1>Корзина</h1>
 
 <div id="cart" class="cart-items"></div>
@@ -35,9 +74,10 @@ rel="stylesheet">
 <a href="menu.html" class="menu-btn">
 В меню
 </a>
-
-<button onclick="pay()">
-Оплатить
+<button onclick="
+location.href='checkout.html'
+">
+Оформить
 </button>
 
 </div>
