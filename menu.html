@@ -25,15 +25,28 @@ rel="stylesheet">
 <div class="chat-box" id="chatBox">
 
 <div class="chat-header">
+
 Поддержка
+
+<span onclick="toggleChat()">
+✖
+</span>
+
 </div>
 
-<div class="messages" id="messages"></div>
+<div class="messages" id="messages">
+
+<div class="bot">
+Здравствуйте 👋 Чем помочь?
+</div>
+
+</div>
 
 <div class="chat-input">
 
-<input id="msg"
-placeholder="Напишите сообщение">
+<input
+id="msg"
+placeholder="Напишите сообщение...">
 
 <button onclick="sendMsg()">
 ➤
@@ -42,6 +55,9 @@ placeholder="Напишите сообщение">
 </div>
 
 </div>
+
+<link rel="stylesheet" href="support.css">
+<script src="support.js"></script>
 <div class="top">
 
 <input type="text"
@@ -111,7 +127,7 @@ id="products">
 <div class="popup"
 id="popup">
 
-Товар добавлен
+Товар добавлен в корзину!
 
 </div>
 

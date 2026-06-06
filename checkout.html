@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Оформление</title>
+
+<link rel="stylesheet" href="checkout.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+<div class="chat-btn" onclick="toggleChat()">
+💬
+</div>
+
+<div class="chat-box" id="chatBox">
+
+<div class="chat-header">
+
+Поддержка
+
+<span onclick="toggleChat()">
+✕
+</span>
+
+</div>
+
+<div class="messages" id="messages">
+
+<div class="bot">
+Здравствуйте 👋 Чем помочь?
+</div>
+
+</div>
+
+<div class="chat-input">
+
+<input
+id="msg"
+placeholder="Напишите сообщение...">
+
+<button onclick="sendMsg()">
+➤
+</button>
+
+</div>
+
+</div>
+
+<link rel="stylesheet" href="support.css">
+<script src="support.js"></script>
+<div class="checkout">
+
+<h1>Оформлення</h1>
+
+<div class="form">
+
+<input id="name" placeholder="Ваше имя">
+
+<input id="phone" placeholder="+380 XX XXX XX XX">
+
+<input id="email" placeholder="your@email.com">
+
+<input id="address"
+placeholder="Город, улица, дом">
+
+<div class="payment">
+
+<label>
+<input type="radio"
+name="pay"
+checked>
+
+Оплата при получении
+</label>
+
+<label>
+<input type="radio"
+name="pay">
+
+Картой онлайн
+</label>
+
+</div>
+
+<h2>Ваш заказ</h2>
+
+<div id="items"></div>
+
+<h3>
+Итого:
+<span id="total">
+0
+</span> грн
+</h3>
+
+<button onclick="finishOrder()">
+Подтвердить заказ
+</button>
+
+</div>
+
+</div>
+
+<script src="checkout.js"></script>
+
+</body>
+</html>

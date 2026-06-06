@@ -30,9 +30,6 @@ document.getElementById("support").innerHTML=data;
 Amazing Pizza
 </div>
 
-<a href="menu.html" class="nav-btn">
-Меню
-</a>
 
 </div>
 
@@ -81,21 +78,24 @@ onclick="openModal()">
 
 <div class="input-box">
 
-<label>
-Время
-</label>
+<label>Время</label>
 
-<input type="time">
+<input
+type="time"
+min="10:00"
+max="16:00"
+step="3600"
+value="10:00"
+required
+>
 
 </div>
 
 <div class="input-box">
 
-<label>
-Столик
-</label>
+<label>Столик</label>
 
-<select>
+<select class="table-select">
 
 <option>Столик 1</option>
 <option>Столик 2</option>

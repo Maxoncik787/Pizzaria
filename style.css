@@ -168,14 +168,22 @@ font-weight:600;
 
 .input-box input,
 .input-box select{
-width:100%;
-padding:15px;
-border-radius:15px;
-border:2px solid #ddd;
-font-size:17px;
-outline:none;
-}
 
+width:100%;
+
+padding:15px;
+
+border-radius:15px;
+
+border:2px solid #ddd;
+
+font-size:17px;
+
+outline:none;
+
+background:white;
+
+}
 .price{
 font-size:40px;
 font-weight:800;
@@ -229,5 +237,20 @@ align-items:center;
 .modal-box{
 padding:25px;
 }
+
+}
+.input-box input[type="time"]{
+
+width:100%;
+
+padding:15px;
+
+border-radius:15px;
+
+border:2px solid #ddd;
+
+font-size:17px;
+
+outline:none;
 
 }
