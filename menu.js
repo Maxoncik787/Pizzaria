@@ -20,7 +20,7 @@ const products = [
 {id:15,name:"Кола",category:"drink",price:80,count:0,img:"https://images.unsplash.com/photo-1622483767028-3f66f32aef97"},
 {id:16,name:"Мохито",category:"drink",price:140,count:0,img:"https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b"},
 {id:17,name:"Фанта",category:"drink",price:85,count:0,img:"https://images.unsplash.com/photo-1624517452488-04869289c4ca"},
-{id:18,name:"Сок",category:"drink",price:90,count:0,img:"https://images.unsplash.com/photo-1600271886742-f049cd5bba3f"}
+{id:18,name:"Сок",category:"drink",price:90,count:0,img:"https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&w=600&q=80"}
 
 ];
 
